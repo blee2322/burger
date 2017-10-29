@@ -4,7 +4,7 @@ $(function() {
   $(".create-form").on("submit", function(event) {
     event.preventDefault();
 
-    var newBurger = {name:$("#burg").val.trim()};
+    var newBurger = {name:$("#burg").val().trim()};
 
     $.ajax("/api/burgers", {
       type: "POST",
