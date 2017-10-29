@@ -39,3 +39,5 @@ router.put("/api/burgers/:id", function(req, res) {
     }
   });
 });
+
+module.exports = router;
