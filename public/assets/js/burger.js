@@ -21,9 +21,9 @@ $(function() {
     var id = $(this).data("id");
     var newDevour = $(this).data("newdevour");
 
-    var newDevourState = {devour: newdevour}
+    var newDevourState = {devour: newDevour}
 
-    $.ajax("/api/burgers" + id, {
+    $.ajax("/api/burgers/" + id, {
       type: "PUT",
       data: newDevourState
     }).then(
