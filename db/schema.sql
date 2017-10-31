@@ -6,7 +6,7 @@ CREATE TABLE burgers
 (
   id int NOT NULL AUTO_INCREMENT,
   name varchar(255) NOT NULL,
-  devour BOOLEAN NOT NULL false,
-  createdAT DATETIME NOT NULL,
+  devour BOOLEAN DEFAULT false,
+  createdAT TIMESTAMP NOT NULL,
   PRIMARY KEY (id)
 );
