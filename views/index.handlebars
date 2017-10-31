@@ -12,7 +12,12 @@
     </div>
     {{!-- Right Side of the Already Devoured --}}
     <div class="col-xs-6">
-      <ul>   
+      <ul>
+        {{#each burger}}
+          {{#if devour}}
+            {{>burger/burger-block devour=false}}
+          {{/if}}
+        {{/each}}
       </ul>
     </div>
       </ul>
